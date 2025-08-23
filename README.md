@@ -2,12 +2,19 @@
 
 ## 1. Equipe
 Caroline Cortez
+
 Carlos Ryan
+
 Emerson Oliveira
+
 Gisely Karla
+
 Laila Guedes
+
 Nathalia Kopke
+
 Roberta Amanda
+
 Vaneza Magalhães
 
 ## 2. Sobre o projeto
