@@ -25,8 +25,11 @@ Os dados brutos fornecidos pela empresa são:
 
 Criação de um conjunto de scripts SQL para estruturar os dados, carregar, extrair as respostas que ajudarão a livraria a entender seus negócios e uma view para simpiflicaar análises futuras.
 
-1. **Definir o Schema**:
-   Criar as tabelas `Clientes`, `Produtos` e `Vendas`. 
-3. **Ingerir os Dados**: Inserir os dados brutos fornecidos nas tabelas.
-4. **Analisar os Dados**: Escrever consultas SQL para responder a perguntas de negócio.
-5. **Criar uma View**: Construir uma `VIEW` para simplificar análises futuras.
+1. **Definição o Schema**:
+   Criação das tabelas `Clientes`, `Produtos` e `Vendas`. 
+2. **Ingestão dos Dados**:
+   Inserção dos dados brutos fornecidos nas tabelas
+3. **Análise dos Dados**
+   Realizar consultas SQL para responder a perguntas de negócio
+4. **Criação de uma View**:
+   Constução de uma `VIEW` para simplificar análises futuras.
