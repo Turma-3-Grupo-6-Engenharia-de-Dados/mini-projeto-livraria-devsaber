@@ -4,20 +4,15 @@
 Caroline Cortez
 
 Carlos Ryan
-
 Emerson Oliveira
-
 Gisely Karla
-
 Laila Guedes
-
 Nathalia Kopke
-
 Roberta Amanda
-
 Vaneza Magalhães
 
 ## 2. Sobre o projeto
+A "Livraria DevSaber", uma loja online, registrou suas primeiras vendas e precisa da sua ajuda para estruturar e analisar esses dados. Sua missão é criar um pequeno data warehouse no Google BigQuery para permitir que a empresa responda a perguntas de negócio importantes sobre seus clientes e produtos.
 
 ## **3. Dados de Origem**
 
