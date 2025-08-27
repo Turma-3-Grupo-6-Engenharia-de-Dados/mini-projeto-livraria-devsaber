@@ -13,7 +13,9 @@
 ## Objetivo do Projeto
 A **Livraria DevSaber**, uma loja online, registrou suas primeiras vendas e, até agora, tem utilizado uma planilha para armazenar essas informações. No entanto, para possibilitar seu crescimento e ter uma análise mais profunda sobre seus clientes e produtos, é necessário adotar uma solução mais eficiente. 
 
-A missão foi criar um mini Data Warehouse no Google BigQuery para coletar, integrar e organizar dados de diversas fontes, oferecendo uma alternativa mais eficiente à planilha, que apresenta limitações de armazenamento, processamento e integração de dados. Para isso, foi desenvolvido todo o pipeline de dados: a criação da estrutura, o carregamento e organização das informações e a extração de insights que permitem responder a perguntas de negócio e gerar relatórios mais precisos e estratégicos.
+A missão foi criar um mini Data Warehouse no Google BigQuery para coletar, integrar e organizar dados de diversas fontes, oferecendo uma alternativa mais eficiente à planilha, que apresenta limitações de armazenamento, processamento e integração de dados. 
+
+Para isso, foi desenvolvido todo o pipeline de dados: a criação da estrutura, o carregamento e organização das informações e a extração de insights que permitem responder a perguntas de negócio e gerar relatórios mais precisos e estratégicos.
 
 ## **Dados de Origem**
 
