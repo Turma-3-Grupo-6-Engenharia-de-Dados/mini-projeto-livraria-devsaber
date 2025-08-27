@@ -37,4 +37,4 @@ VALUES
   (103, 'Python para Dados', 'Programação', 75.00),
   (104, 'o Guia do Mochileiro', 'Ficção Científica', 42.00);
 
-testeuyfgjhghjg
+teste
