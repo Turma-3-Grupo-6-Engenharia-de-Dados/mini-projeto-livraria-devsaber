@@ -36,5 +36,3 @@ VALUES
   (102, 'Duna', 'Ficção Científica', 80.50),
   (103, 'Python para Dados', 'Programação', 75.00),
   (104, 'o Guia do Mochileiro', 'Ficção Científica', 42.00);
-
-testeEEEE
