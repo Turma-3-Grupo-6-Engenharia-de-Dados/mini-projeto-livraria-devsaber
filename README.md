@@ -10,8 +10,10 @@
 * Roberta Amanda
 * Vaneza Magalhães
 
-## Sobre o projeto
-A "Livraria DevSaber", uma loja online, registrou suas primeiras vendas e precisa de ajuda para estruturar e analisar esses dados. A missão é criar um pequeno data warehouse no Google BigQuery para permitir que a empresa responda a perguntas de negócio importantes sobre seus clientes e produtos.
+## Objetivo do Projeto
+A **Livraria DevSaber**, uma loja online, registrou suas primeiras vendas e, até agora, tem utilizado uma planilha para armazenar essas informações. No entanto, para possibilitar seu crescimento e ter uma análise mais profunda sobre seus clientes e produtos, é necessário adotar uma solução mais eficiente. 
+
+A missão foi criar um mini Data Warehouse no Google BigQuery para coletar, integrar e organizar dados de diversas fontes, oferecendo uma alternativa mais eficiente à planilha, que apresenta limitações de armazenamento, processamento e integração de dados. Para isso, foi desenvolvido todo o pipeline de dados: a criação da estrutura, o carregamento e organização das informações e a extração de insights que permitem responder a perguntas de negócio e gerar relatórios mais precisos e estratégicos.
 
 ## **Dados de Origem**
 
@@ -27,14 +29,22 @@ Dados brutos fornecidos pela empresa:
 | 6 | Bruno Costa | b.costa@email.com | RJ | O Guia do Mochileiro | Ficção Científica | 42.00 | 2024-03-05 | 1 |
 
 ## **Missão do Projeto**
-
 Criação de um conjunto de scripts SQL para estruturar os dados, carregar, extrair as respostas que ajudarão a livraria a entender seus negócios e uma view para simpiflicaar análises futuras.
 
-1. **Definição o Schema**:
-   Criação das tabelas `Clientes`, `Produtos` e `Vendas`. 
+1. **Definição do Schema**:
+
+   Criação das tabelas `Clientes`, `Produtos` e `Vendas`.
+~pendente
+   
 2. **Ingestão dos Dados**:
-   Inserção dos dados brutos fornecidos nas tabelas 
+
+   Inserção dos dados brutos fornecidos nas tabelas
+
+   Arquivo `02_insert_data_bigquery.sql`
+   
 3. **Análise dos Dados**
+
    Realizar consultas SQL para responder a perguntas de negócio
 4. **Criação de uma View**:
+
    Constução de uma `VIEW` para simplificar análises futuras.
