@@ -25,14 +25,14 @@ ORDER BY V.Data_Venda;
 -- Pergunta 4: valor total de cada venda
 SELECT
   V.ID_Venda,
-  V.Quantidade * P.Preco_Produto AS Valor_Total
+  V.Quantidade_Venda * P.Preco_Produto AS Valor_Total
 FROM `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.Vendas` V
 JOIN `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.Produtos` P ON V.ID_Produto = P.ID_Produto;
 
 -- Pergunta 5: produto mais vendido
 SELECT
   P.Nome_Produto,
-  SUM(V.Quantidade) AS Total_Quantidade_Vendida
+  SUM(V.Quantidade_Venda) AS Total_Quantidade_Vendida
 FROM `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.Vendas` V
 JOIN `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.Produtos` P ON V.ID_Produto = P.ID_Produto
 GROUP BY P.Nome_Produto
