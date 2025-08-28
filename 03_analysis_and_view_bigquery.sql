@@ -4,13 +4,13 @@
 -- Pergunta 1: clientes do estado 'SP'
 SELECT  Nome_Cliente
 FROM  Clientes
-WHERE  Estado_Cliente = 'SP';
+WHERE  Estado_Cliente  =  'SP';
 
 -- Pergunta 2: produtos de Ficção Científica
 
 SELECT  Nome_Produto
 FROM  Produtos
-WHERE  Categoria_Produto = 'Ficção Científica';
+WHERE  Categoria_Produto  =  'Ficção Científica';
 
 -- Pergunta 3: todas as vendas (cliente, produto, data)
 SELECT
