@@ -1,15 +1,5 @@
 # 📊 Pipeline de Dados e Análise com SQL no BigQuery
 
-## 👥 Equipe
-* Caroline Cortez
-* Carlos Ryan
-* Emerson Oliveira
-* Gisely Karla
-* Laila Guedes
-* Nathalia Kopke
-* Roberta Amanda
-* Vaneza Magalhães 
-
 ## [Mini Projeto] Livraria DevSaber 📚
 ### Objetivo do Projeto
 A **Livraria DevSaber**, uma loja online, registrou suas primeiras vendas e, até agora, tem utilizado uma planilha para armazenar essas informações. No entanto, para possibilitar seu crescimento e ter uma análise mais profunda sobre seus clientes e produtos, é necessário adotar uma solução mais eficiente. 
@@ -54,8 +44,6 @@ Para isso, foi desenvolvido todo o pipeline de dados: a criação da estrutura, 
    Constução de uma `VIEW` para simplificar análises futuras.
 
 
-
-
 ## Automação e Reuso: Criando uma VIEW
 **P: Qual é a principal vantagem de usar uma VIEW em vez de simplesmente salvar o código em um arquivo de texto?**
 
@@ -64,4 +52,14 @@ R: A VIEW fica armazenada no banco de dados e pode ser reutilizada como se fosse
 **P: Se o preço de um produto mudar na tabela Produtos, o Valor_Total na VIEW será atualizado automaticamente na próxima vez que a consultarmos?**
 
 R: Nesse caso, sim. A VIEW não armazena os dados, apenas o código SQL, portanto toda vez que a utilizamos, é como se executássemos o código novamente. Assim, quando o preço muda na tabela Produtos, ao consultar a VIEW, o cálculo do Valor_Total já vai refletir o novo preço.
+
+## 👥 Equipe
+* Caroline Cortez
+* Carlos Ryan
+* Emerson Oliveira
+* Gisely Karla
+* Laila Guedes
+* Nathalia Kopke
+* Roberta Amanda
+* Vaneza Magalhães 
 
