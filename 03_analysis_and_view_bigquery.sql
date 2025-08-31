@@ -38,7 +38,6 @@ GROUP BY P.Nome_Produto
 ORDER BY Total_Quantidade_Vendida DESC
 LIMIT 1;
 
-
 -- CRIAÇÃO DA VIEW --
 CREATE OR REPLACE VIEW `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.v_relatorio_vendas_detalhado` AS
 SELECT
@@ -61,6 +60,7 @@ WHERE Nome_Cliente = 'Ana Silva';
 SELECT *
 FROM `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.v_relatorio_vendas_detalhado` 
 WHERE Nome_Cliente = 'Carla Dias';
+
 -- Consultar o valor total de cada venda feita no dia 02/02/2024
 SELECT *
 FROM `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.v_relatorio_vendas_detalhado` 
