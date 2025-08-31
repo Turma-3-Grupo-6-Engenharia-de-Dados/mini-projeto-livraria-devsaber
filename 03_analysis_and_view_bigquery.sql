@@ -1,6 +1,5 @@
 -- ANÁLISE DE DADOS --
 
-
 -- Pergunta 1: clientes do estado 'SP'
 SELECT  Nome_Cliente
 FROM  `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.Clientes`
@@ -62,7 +61,6 @@ WHERE Nome_Cliente = 'Ana Silva';
 SELECT *
 FROM `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.v_relatorio_vendas_detalhado` 
 WHERE Nome_Cliente = 'Carla Dias';
-
 -- Consultar o valor total de cada venda feita no dia 02/02/2024
 SELECT *
 FROM `t1engenhariadados.LivrariaDevSaber_Grupo_3_6.v_relatorio_vendas_detalhado` 
