@@ -1,6 +1,6 @@
-# [Mini Projeto] Pipeline de Dados e Análise com SQL no BigQuery
+# 📊 Pipeline de Dados e Análise com SQL no BigQuery
 
-## Equipe
+## 👥 Equipe
 * Caroline Cortez
 * Carlos Ryan
 * Emerson Oliveira
@@ -8,14 +8,11 @@
 * Laila Guedes
 * Nathalia Kopke
 * Roberta Amanda
-* Vaneza Magalhães
+* Vaneza Magalhães 
 
-## Objetivo do Projeto
+## [Mini Projeto] Livraria DevSaber 📚
+### Objetivo do Projeto
 A **Livraria DevSaber**, uma loja online, registrou suas primeiras vendas e, até agora, tem utilizado uma planilha para armazenar essas informações. No entanto, para possibilitar seu crescimento e ter uma análise mais profunda sobre seus clientes e produtos, é necessário adotar uma solução mais eficiente. 
-
-A missão foi criar um mini Data Warehouse no Google BigQuery para coletar, integrar e organizar dados de diversas fontes, oferecendo uma alternativa mais eficiente à planilha, que apresenta limitações de armazenamento, processamento e integração de dados. 
-
-Para isso, foi desenvolvido todo o pipeline de dados: a criação da estrutura, o carregamento e organização das informações e a extração de insights que permitem responder a perguntas de negócio e gerar relatórios mais precisos e estratégicos.
 
 ## **Dados de Origem**
 
@@ -30,8 +27,13 @@ Dados brutos fornecidos pela empresa:
 | 5 | Daniel Souza | daniel.s@email.com | MG | Fundamentos de SQL | Dados | 60.00 | 2024-02-20 | 1 |
 | 6 | Bruno Costa | b.costa@email.com | RJ | O Guia do Mochileiro | Ficção Científica | 42.00 | 2024-03-05 | 1 |
 
+## 🔗 Acesso ao conjunto de dados
+* [Big Query](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1st1engenhariadados!2sLivrariaDevSaber_Grupo_3_6&project=t1engenhariadados)
+
 ## **Missão do Projeto**
-Criação de um conjunto de scripts SQL para estruturar os dados, carregar, extrair as respostas que ajudarão a livraria a entender seus negócios e uma view para simpiflicaar análises futuras.
+A missão foi criar um mini Data Warehouse no Google BigQuery para coletar, integrar e organizar dados de diversas fontes, oferecendo uma alternativa mais eficiente à planilha, que apresenta limitações de armazenamento, processamento e integração de dados. 
+
+Para isso, foi desenvolvido todo o pipeline de dados: a criação da estrutura, o carregamento e organização das informações e a extração de insights que permitem responder a perguntas de negócio e gerar relatórios mais precisos e estratégicos. Criação de um conjunto de scripts SQL para estruturar os dados, carregar, extrair as respostas que ajudarão a livraria a entender seus negócios e uma view para simpiflicaar análises futuras.
 
 1. **Definição do Schema**:
 
@@ -50,6 +52,7 @@ Criação de um conjunto de scripts SQL para estruturar os dados, carregar, extr
 4. **Criação de uma View**:
 
    Constução de uma `VIEW` para simplificar análises futuras.
+
 
 
 
