@@ -27,22 +27,22 @@ A missão foi construir um **Data Warehouse** no Google BigQuery para coletar, i
 Desenvolvimento de um **pipeline de dados**:
 
 1. **Definição do Schema**:
- * Criação das tabelas:
-   * `Clientes`
-   * `Produtos`
-   * `Vendas`
-*  Arquivo `01_create_tables_bigquery.sql`
+  * Criação das tabelas:
+       * `Clientes`
+       * `Produtos`
+       * `Vendas`
+  *  Arquivo `01_create_tables_bigquery.sql`
    
 2. **Ingestão dos Dados**:
-* Inserção dos dados brutos fornecidos nas tabelas
-* Arquivo `02_insert_data_bigquery.sql`
+  * Inserção dos dados brutos fornecidos nas tabelas
+  * Arquivo `02_insert_data_bigquery.sql`
    
 3. **Análise dos Dados e criação de uma `VIEW`**
-* Consultas SQL para responder perguntas de negócios
-* Construção de uma `VIEW` para simplificar análises futuras
-* Arquivo `03_analysis_and_view_bigquery.sql`
+  * Consultas SQL para responder perguntas de negócios
+  * Construção de uma `VIEW` para simplificar análises futuras
+  * Arquivo `03_analysis_and_view_bigquery.sql`
 
-## 💡 Perguntas respondidas no desenvolvimento do projeto 
+## 💡 Perguntas respondidas durante o desenvolvimento do projeto 
 
 ## Contexto Livraria DevSaber
 **P: Por que uma planilha não é ideal para uma empresa que quer analisar suas vendas a fundo?**
@@ -55,19 +55,35 @@ R: Nesse contexto da loja online, o uso da planilha não é ideal por diversas r
 ## Perguntas respondidas com base nas consultas
 * Pergunta 1: Qual o nome dos clientes que moram no estado de 'SP'?
 
-  
+  R: 2 clientes: Carla Dias e Ana Silva
 
 * Pergunta 2: Quais produtos pertencem à categoria 'Ficção Científica'?
   
-  
+  R: 2 produtos: Duna e O Guia do Mochileiro
 
 * Pergunta 3: Listar todas as vendas, mostrando o nome do cliente, o nome do produto e a data da venda, ordenando pela data.
 
-  R:
+  | Nome_Cliente | Nome_Produto | Data_Venda | 
+  | --- | --- | --- | 
+  | Bruno Costa | Duna | 2024-01-18 |
+  | Carla Dias | Python para Dados | 2024-02-02 |
+  | Ana Silva | Duna | 2024-02-10 |
+  | Daniel Souza | Fundamentos de SQL | 2024-02-20 | 
+  | Bruno Costa | O Guia do Mochileiro | 2024-03-05 |
+
 
 * Pergunta 4: Qual o valor total de cada venda? (quantidade * preço)
 
-  R: 
+  R: O ID_Venda 2 e 4 tiveram um valor total de R$ 80,50, enquanto as ID_Venda 5 e 1 resultaram em R$ 60,00 cada. Por último, o ID_Venda 3 teve o maior valor total, de R$ 150,00.
+  
+  | ID_Venda | Valor_Total | 
+  | --- | --- | 
+  | 2 | 80.5 |
+  | 4 | 80.5 |
+  | 5 | 60 |
+  | 1 | 60| 
+  | 6 | 42 |
+  | 3 | 150 | 
 
 * Pergunta 5: Qual o produto mais vendido em termos de quantidade?
 
