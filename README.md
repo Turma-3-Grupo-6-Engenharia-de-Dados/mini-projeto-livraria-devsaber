@@ -42,7 +42,7 @@ Desenvolvimento de um **pipeline de dados**:
 * Construção de uma `VIEW` para simplificar análises futuras
 * Arquivo `03_analysis_and_view_bigquery.sql`
 
-## 💡 Perguntas respondidas ao longo do desenvolvimento do projeto 
+## 💡 Perguntas respondidas no desenvolvimento do projeto 
 
 ## Contexto Livraria DevSaber
 **P: Por que uma planilha não é ideal para uma empresa que quer analisar suas vendas a fundo?**
@@ -52,25 +52,26 @@ R: Nesse contexto da loja online, o uso da planilha não é ideal por diversas r
 * Dificuldade de integração: a integração de diversas fontes de dados em uma planilha é um processo manual e suscetível a erros, o que compromete a confiabilidade das informações.
 * Análises limitadas: por conta da dificuldade de integrar as informações, não é possível fazer análises detalhadas e necessárias para a tomada de decisões.
 
-## Perguntas respondida com base nas consultas
+## Perguntas respondidas com base nas consultas
 * Pergunta 1: Qual o nome dos clientes que moram no estado de 'SP'?
-  R:
+
+  
 
 * Pergunta 2: Quais produtos pertencem à categoria 'Ficção Científica'?
   
-  R:
+  
 
 * Pergunta 3: Listar todas as vendas, mostrando o nome do cliente, o nome do produto e a data da venda, ordenando pela data.
 
   R:
 
-* Pergunta 4: Qual o valor total de cada venda?
+* Pergunta 4: Qual o valor total de cada venda? (quantidade * preço)
 
-  R:
+  R: 
 
 * Pergunta 5: Qual o produto mais vendido em termos de quantidade?
 
-  R:
+  R: Duna é o produto mais vendido, totalizando 2 unidades vendidas.
 
 ## Criação das tabelas
 **P: Com base nos dados brutos, quais outras duas tabelas precisamos criar? Que colunas e tipos de dados elas teriam?**
