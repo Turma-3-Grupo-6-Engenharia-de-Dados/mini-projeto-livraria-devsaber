@@ -2,7 +2,7 @@
 
 ## [Mini Projeto] Livraria DevSaber 📚
 ### Objetivo do Projeto
-A **Livraria DevSaber**, uma loja online, registrou suas primeiras vendas e, até agora, tem utilizado uma planilha para armazenar essas informações. No entanto, para possibilitar seu crescimento e ter uma análise mais profunda sobre seus clientes e produtos, é necessário adotar uma solução mais eficiente. 
+A **Livraria DevSaber** é uma loja online que registrou suas primeiras vendas e, até agora, tem usado uma planilha para armazenar informações de clientes, produtos e vendas. No entanto, para possibilitar seu crescimento e ter uma análise mais profunda sobre seus dados, é necessário adotar uma solução mais eficiente para a gestão e análise das informações.
 
 ## **Dados de Origem**
 
@@ -20,29 +20,73 @@ Dados brutos fornecidos pela empresa:
 ## 🔗 Acesso ao conjunto de dados
 * [Big Query](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1st1engenhariadados!2sLivrariaDevSaber_Grupo_3_6&project=t1engenhariadados)
 
-## **Missão do Projeto**
-A missão foi criar um mini Data Warehouse no Google BigQuery para coletar, integrar e organizar dados de diversas fontes, oferecendo uma alternativa mais eficiente à planilha, que apresenta limitações de armazenamento, processamento e integração de dados. 
+## 🎯 Missão do Projeto
+A missão foi construir um **Data Warehouse** no Google BigQuery para coletar, integrar e organizar dados de diversas fontes, oferecendo uma alternativa mais eficiente à planilha, que apresenta limitações de armazenamento, processamento e integração de dados. 
 
-Para isso, foi desenvolvido todo o pipeline de dados: a criação da estrutura, o carregamento e organização das informações e a extração de insights que permitem responder a perguntas de negócio e gerar relatórios mais precisos e estratégicos. Criação de um conjunto de scripts SQL para estruturar os dados, carregar, extrair as respostas que ajudarão a livraria a entender seus negócios e uma view para simpiflicaar análises futuras.
+## ✅ Solução implementada
+Desenvolvimento de um **pipeline de dados**:
 
 1. **Definição do Schema**:
-
-   Criação das tabelas `Clientes`, `Produtos` e `Vendas`.
-~pendente
+ * Criação das tabelas:
+   * `Clientes`
+   * `Produtos`
+   * `Vendas`
+*  Arquivo `01_create_tables_bigquery.sql`
    
 2. **Ingestão dos Dados**:
-
-   Inserção dos dados brutos fornecidos nas tabelas
-
-   Arquivo `02_insert_data_bigquery.sql`
+* Inserção dos dados brutos fornecidos nas tabelas
+* Arquivo `02_insert_data_bigquery.sql`
    
-3. **Análise dos Dados**
+3. **Análise dos Dados e criação de uma `VIEW`**
+* Consultas SQL para responder perguntas de negócios
+* Construção de uma `VIEW` para simplificar análises futuras
+* Arquivo `03_analysis_and_view_bigquery.sql`
 
-   Realizar consultas SQL para responder a perguntas de negócio
-4. **Criação de uma View**:
+## 💡 Perguntas respondidas ao longo do desenvolvimento do projeto 
 
-   Constução de uma `VIEW` para simplificar análises futuras.
+## Contexto Livraria DevSaber
+**P: Por que uma planilha não é ideal para uma empresa que quer analisar suas vendas a fundo?**
 
+R: Nesse contexto da loja online, o uso da planilha não é ideal por diversas razões:
+* Limitação do volume de dados: com o crescimento da empresa, a planilha pode não suportar um grande volumes de dados. Consequentemente, pode ser que fique pesada e difícil de usar, prejudicando quem precisa acessas as informações.
+* Dificuldade de integração: a integração de diversas fontes de dados em uma planilha é um processo manual e suscetível a erros, o que compromete a confiabilidade das informações.
+* Análises limitadas: por conta da dificuldade de integrar as informações, não é possível fazer análises detalhadas e necessárias para a tomada de decisões.
+
+## Perguntas respondida com base nas consultas
+* Pergunta 1: Qual o nome dos clientes que moram no estado de 'SP'?
+  R:
+
+* Pergunta 2: Quais produtos pertencem à categoria 'Ficção Científica'?
+  
+  R:
+
+* Pergunta 3: Listar todas as vendas, mostrando o nome do cliente, o nome do produto e a data da venda, ordenando pela data.
+
+  R:
+
+* Pergunta 4: Qual o valor total de cada venda?
+
+  R:
+
+* Pergunta 5: Qual o produto mais vendido em termos de quantidade?
+
+  R:
+
+## Criação das tabelas
+**P: Com base nos dados brutos, quais outras duas tabelas precisamos criar? Que colunas e tipos de dados elas teriam?**
+
+R: Tabelas de Produtos e Vendas
+* Tabela Produtos: ID_Produto, Categoria_Produto, Nome_Produto, Preco_Produto
+* Tabela Vendas: ID_Cliente, ID_Produto, ID_Venda, Data_Venda, Quantidade
+
+## Ingestão dos dados
+**P: Por que é uma boa prática inserir os clientes e produtos em suas próprias tabelas antes de inserir os dados de vendas?**
+
+R: Para evitar repetição de informações, facilitar a manutenção e atualizações e manter a integridade referencial, ou seja, quando criamos tabelas de clientes, produtos e vendas separadas, relacionamos essas tabelas usando chaves primárias e estrangeiras, garantindo que que cada venda esteja sempre ligada a um cliente e um produto que existem no banco de dados.
+
+**P: Em um cenário com milhões de vendas por dia, o `INSERT INTO` seria a melhor abordagem?**
+
+R: Pode ser que não seja a melhor opção, seria necessário avaliar a situação. 
 
 ## Automação e Reuso: Criando uma VIEW
 **P: Qual é a principal vantagem de usar uma VIEW em vez de simplesmente salvar o código em um arquivo de texto?**
@@ -62,4 +106,3 @@ R: Nesse caso, sim. A VIEW não armazena os dados, apenas o código SQL, portant
 * Nathalia Kopke
 * Roberta Amanda
 * Vaneza Magalhães 
-
