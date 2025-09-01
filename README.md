@@ -44,7 +44,7 @@ Desenvolvimento de um **pipeline de dados**:
 
 ## 💡 Perguntas respondidas durante o desenvolvimento do projeto 
 
-## Contexto Livraria DevSaber
+## ◼️ Contexto Livraria DevSaber
 **P: Por que uma planilha não é ideal para uma empresa que quer analisar suas vendas a fundo?**
 
 R: Nesse contexto da loja online, o uso da planilha não é ideal por diversas razões:
@@ -52,7 +52,7 @@ R: Nesse contexto da loja online, o uso da planilha não é ideal por diversas r
 * Dificuldade de integração: a integração de diversas fontes de dados em uma planilha é um processo manual e suscetível a erros, o que compromete a confiabilidade das informações.
 * Análises limitadas: por conta da dificuldade de integrar as informações, não é possível fazer análises detalhadas e necessárias para a tomada de decisões.
 
-## Perguntas respondidas com base nas consultas
+## ◼️ Perguntas respondidas com base nas consultas
 * Pergunta 1: Qual o nome dos clientes que moram no estado de 'SP'?
 
   R: 2 clientes: Carla Dias e Ana Silva
@@ -89,14 +89,14 @@ R: Nesse contexto da loja online, o uso da planilha não é ideal por diversas r
 
   R: Duna é o produto mais vendido, totalizando 2 unidades vendidas.
 
-## Criação das tabelas
+## ◼️ Criação das tabelas
 **P: Com base nos dados brutos, quais outras duas tabelas precisamos criar? Que colunas e tipos de dados elas teriam?**
 
 R: Tabelas de Produtos e Vendas
 * Tabela Produtos: ID_Produto, Categoria_Produto, Nome_Produto, Preco_Produto
 * Tabela Vendas: ID_Cliente, ID_Produto, ID_Venda, Data_Venda, Quantidade
 
-## Ingestão dos dados
+## ◼️ Ingestão dos dados
 **P: Por que é uma boa prática inserir os clientes e produtos em suas próprias tabelas antes de inserir os dados de vendas?**
 
 R: Para evitar repetição de informações, facilitar a manutenção e atualizações e manter a integridade referencial, ou seja, quando criamos tabelas de clientes, produtos e vendas separadas, relacionamos essas tabelas usando chaves primárias e estrangeiras, garantindo que que cada venda esteja sempre ligada a um cliente e um produto que existem no banco de dados.
@@ -105,7 +105,7 @@ R: Para evitar repetição de informações, facilitar a manutenção e atualiza
 
 R: Pode ser que não seja a melhor opção, seria necessário avaliar a situação. 
 
-## Automação e Reuso: Criando uma VIEW
+## ◼️ Automação e Reuso: Criando uma VIEW
 **P: Qual é a principal vantagem de usar uma VIEW em vez de simplesmente salvar o código em um arquivo de texto?**
 
 R: A VIEW fica armazenada no banco de dados e pode ser reutilizada como se fosse uma tabela, sem precisar reescrever o código. Se o código estiver apenas em um arquivo de texto, cada aplicação teria que copiá-lo e executá-lo manualmente, o que pode gerar erros e retrabalho.
